@@ -1,12 +1,11 @@
 package P1_BasicHttpRequests;
-
 import org.testng.annotations.Test;
 import static io.restassured.RestAssured.*;
 import static io.restassured.matcher.RestAssuredMatchers.*;
 import static org.hamcrest.Matchers.*;
 
 
-public class Ex1_getRequest
+public class Ex1_getRequest1
 {
     @Test
     public void TC1()
