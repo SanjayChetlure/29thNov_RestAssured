@@ -1,0 +1,64 @@
+{
+  "students": [
+    {
+      "id": "1",
+      "name": "john",
+      "location": "india",
+      "phone": "1111",
+      "courses": [
+        "Java",
+        "Selenium"
+      ]
+    },
+    {
+      "id": "2",
+      "name": "KIM",
+      "location": "US",
+      "phone": "2222",
+      "courses": [
+        "python",
+        "appium"
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Pallavi",
+      "location": "Mumbai",
+      "phone": "333",
+      "courses": [
+        "Selenium",
+        "python"
+      ]
+    },
+    {
+      "id": "4",
+      "courses": [
+        "Selenium",
+        "python"
+      ],
+      "phone": "444",
+      "name": "ramesh",
+      "location": "Nanded"
+    },
+    {
+      "id": "5",
+      "name": "Sweta",
+      "location": "US",
+      "phone": "5555",
+      "courses": [
+        "java",
+        "appium"
+      ]
+    },
+    {
+      "id": "6",
+      "name": "Tanvi",
+      "location": "pune",
+      "phone": "6666",
+      "courses": [
+        "manual",
+        "automation"
+      ]
+    }
+  ]
+}
