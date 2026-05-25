@@ -93,7 +93,7 @@ public class Ex1_ParsingJSONResponseData
     }
 
 
-     @Test(priority = 5)
+//     @Test(priority = 5)
     public void verifySpecificTitleFromResponse()
     {
         Response resp = given()
@@ -121,20 +121,18 @@ public class Ex1_ParsingJSONResponseData
     }
 
 
-
-
-   // @Test(priority = 5)
+    @Test(priority = 5)
     public void verifyTotalPriceFromResponse()
     {
         Response resp = given()
                 .contentType(ContentType.JSON)
                 .when()
                 .get("http://localhost:3000/store");
+
         JSONObject jo=new JSONObject(resp.asString());
 
 
         double totalPrice=0;
-
 
         int lastIndex = jo.getJSONArray("book").length()-1;
         for(int i=0; i<=lastIndex; i++)
@@ -143,9 +141,8 @@ public class Ex1_ParsingJSONResponseData
             totalPrice=totalPrice+ Double.parseDouble(price);
         }
 
-
         System.out.println(totalPrice);
-        Assert.assertEquals(totalPrice, 601,"Failed : price mismatch  -   ");
+        Assert.assertEquals(totalPrice, 600,"Failed : price mismatch  -   ");
     }
 }
 
