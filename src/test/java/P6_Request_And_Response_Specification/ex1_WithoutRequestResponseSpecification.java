@@ -1,5 +1,4 @@
 package P6_Request_And_Response_Specification;
-
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.builder.ResponseSpecBuilder;
 import io.restassured.http.ContentType;

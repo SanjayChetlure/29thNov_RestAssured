@@ -19,7 +19,7 @@ public class ex2_ReusableRequestResponseSpecification {
     @BeforeClass
     public void beforeClass() {
         requestSpec = new RequestSpecBuilder()
-                .setBaseUri("https://api.zippopotam.us").build();
+                .setBaseUri("https://api.zippopotam.us").setContentType(ContentType.JSON).build();
 
         responseSpec = new ResponseSpecBuilder()
                 .expectStatusCode(200)
@@ -31,11 +31,21 @@ public class ex2_ReusableRequestResponseSpecification {
     public void TC1_verifyPalcesNames() {
         given()
                 .spec(requestSpec)
-                .when()
+        .when()
                 .get("us/90210")
-                .then()
-                .spec(responseSpec)
-                .and()
-                .body("places[0].'place name'", equalTo("Beverly Hills"));
+        .then()
+                .body("places[0].'place name'", equalTo("Beverly Hills"))
+                .spec(responseSpec);
+    }
+
+    @Test
+    public void TC2_verifyState() {
+        given()
+                .spec(requestSpec)
+        .when()
+                .get("AR/1601")
+        .then()
+                .body("places[0].'state'", equalTo("BUENOS AIRES"))
+                .spec(responseSpec);
     }
 }
