@@ -59,6 +59,16 @@
         "manual",
         "automation"
       ]
+    },
+    {
+      "id": "7",
+      "name": "abc7",
+      "location": "Pune",
+      "phone": "7777",
+      "courses": [
+        "sql",
+        "python"
+      ]
     }
   ]
 }
