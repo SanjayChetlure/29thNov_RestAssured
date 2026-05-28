@@ -1,9 +1,8 @@
-package P7_7Serialization_And_Deserialization_request_and_response_bodies;
+package P7_Serialization_And_Deserialization_request_and_response_bodies;
 
 import P2_DifferentWaysToCreatePostRequestBody.StudentPOJO;
 import com.fasterxml.jackson.core.exc.StreamWriteException;
 import com.fasterxml.jackson.databind.DatabindException;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import org.testng.annotations.Test;
 
 import java.io.IOException;

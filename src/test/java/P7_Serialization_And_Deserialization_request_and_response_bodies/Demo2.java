@@ -1,4 +1,4 @@
-package P7_7Serialization_And_Deserialization_request_and_response_bodies;
+package P7_Serialization_And_Deserialization_request_and_response_bodies;
 
 public class Demo2
 {
